@@ -1,0 +1,67 @@
+.fondo {
+  background-image: url(../../assets/img/fondo-soacha.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.divider-custom {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-custom.divider-light .divider-custom-line {
+  background-color: #fff;
+}
+
+.divider-custom .divider-custom-line:first-child {
+  margin-right: 1rem;
+}
+
+.divider-custom .divider-custom-line {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  background-color: #2c3e50;
+  border-radius: 1rem;
+  border-color: #2c3e50;
+}
+
+.divider-custom.divider-light .divider-custom-icon {
+  color: #fff;
+}
+
+.divider-custom .divider-custom-icon {
+  color: #2c3e50;
+  font-size: 2rem;
+  height: auto;
+}
+
+.divider-custom-icon {
+  width: 100px;
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+
+.parrafo {
+  margin: 1 0px;
+}
+
+.icon-posicion{
+    width: 30px;
+    margin-right: 5px;
+}
+
+.position{
+    margin-top: 120px;
+}
+
+.flecha{
+  width: 35px;
+}
