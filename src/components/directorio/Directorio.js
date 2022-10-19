@@ -1,33 +1,26 @@
 import Header from "../header/Header";
 import "../css/directory.css";
+import Card from "./Card";
+import cards from "./InfoCards";
+import "../css/fondo-home.css"
+import Footer from "../footer/Footer";
+
+
+console.log(cards);
 
 function Directorio() {
   return (
-    <div className="fondo-directory h-screen">
+    <div className="">
       <Header />
-      <h1>directorio</h1>
-      <div class="max-w-sm rounded overflow-hidden shadow-lg">
-        {/* <img class="w-full" src="" alt="Sunset in the mountains"> */}
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-          <p class="text-gray-700 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus quia, nulla! Maiores et perferendis eaque,
-            exercitationem praesentium nihil.
-          </p>
-        </div>
-        <div class="px-6 pt-4 pb-2">
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-            #photography
-          </span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-            #travel
-          </span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-            #winter
-          </span>
-        </div>
+      <h1 className="text-center text-5xl m-10 color-text font-medium">Directorio</h1>
+      <div className="flex flex-wrap m-auto justify-evenly gap-6 py-0 px-28 mb-8">
+        {cards.map((card) => (
+          <div className="cursor-pointer card " key={card.id}>
+            <Card imageSource={card.image}/>  
+          </div>
+        ))}
       </div>
+      <Footer/>
     </div>
   );
 }

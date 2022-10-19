@@ -65,3 +65,17 @@
 .flecha{
   width: 35px;
 }
+
+.bg-header{
+  background-color: #0C2941;
+}
+
+.color-text{
+  color: #0C2941;
+}
+
+.card:hover{
+  box-shadow: #0c294169 0px 7px 20px 0px;
+}
+
+

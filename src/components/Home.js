@@ -14,12 +14,12 @@ export function Home() {
       <Header />
       <div className="w-full text-white p-5 mt-28 mr-auto ml-auto  container flex justify-center items-center flex-col">
         <h1 className="text-7xl">Busca Tu Servicio</h1>
-        <div class="divider-custom divider-light">
-          <div class="divider-custom-line"></div>
-          <div class="divider-custom-icon text-7xl">
+        <div className="divider-custom divider-light">
+          <div className="divider-custom-line"></div>
+          <div className="divider-custom-icon text-7xl">
             <img src={img["logo-home"]} alt="logo" className="text-7xl" />
           </div>
-          <div class="divider-custom-line"></div>
+          <div className="divider-custom-line"></div>
         </div>
         <p className="parrafo text-lg">
           Es simple. Los clientes buscan, te encuentran, te contactan, vendes.
@@ -35,11 +35,10 @@ export function Home() {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6"
+            className="w-6 h-6"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              className="round"
               d="M8.25 4.5l7.5 7.5-7.5 7.5"
             />
           </svg>

@@ -83,3 +83,16 @@ div > menu > div.hover > menu > div{
   transform:translateX(0) translateY(0%);
   opacity: 1;
 }
+
+
+.bg-footer{
+  background-color: #2C3E50;
+}
+
+.icon-footer:hover{
+  border-radius: 50px;
+  box-shadow: #1a70bb 0px 7px 15px 0px;
+}
+
+
+
