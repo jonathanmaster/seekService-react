@@ -18,6 +18,7 @@ import Taller from "./components/directorios/Taller";
 import Otros from "./components/directorios/Otros";
 import Info1 from "./components/directorios/electro/Info1";
 import Info2 from "./components/directorios/electro/Info2";
+import Registro from "./components/RegistrarServicio/Registro";
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/directorio" element={<Directorio />} />
           <Route path="/about" element={<About />} />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path="/registro" element={<Registro />} />
           <Route path="/electro" element={<Electro />} />
           <Route path="/hogar" element={<Hogar />} />
           <Route path="/decoracion" element={<Decoracion />} />

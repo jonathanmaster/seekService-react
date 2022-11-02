@@ -37,7 +37,7 @@ export default function Header() {
         <Link to="/contacto" className="text-lg hover:text-teal-600">
           Contáctame
         </Link>
-        <Link to="/" className="hover:text-teal-600">
+        <Link to="/registro" className="hover:text-teal-600">
             Registra tu Servicio
           </Link>
         <div>
