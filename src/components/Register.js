@@ -2,6 +2,10 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { Alert } from "./Alert";
+import img from "../assets/imagenes";
+
+
+
 export function Register() {
   const { signup } = useAuth();
 
@@ -25,17 +29,20 @@ export function Register() {
   };
 
   return (
-    <div className="w-full max-w-xs m-auto text-black">
+    <div className="mt-40">
+    <div className="w-full max-w-xs m-auto mt-20 bg-gray-800 p-3 rounded-md">
       {error && <Alert message={error} />}
 
       <form
         onSubmit={handleSubmit}
-        className="bg-white shadow-md rounded px-8 pt-6 pb-6 mb-4"
+        className=" shadow-md rounded px-8 pt-6 pb-6 mb-4"
       >
-        <div className="mb-4">
+          <h1 className="text-2xl text-white font-bold ">Registrate</h1>
+
+        <div className="mb-4 mt-2">
           <label
             htmlFor="email"
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block text-white text-base font-bold mb-2"
           >
             Correo
           </label>
@@ -50,7 +57,7 @@ export function Register() {
         <div className="mb-4">
           <label
             htmlFor="password"
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block text-white text-base font-bold mb-2"
           >
             Contraseña
           </label>
@@ -62,16 +69,23 @@ export function Register() {
           />
         </div>
 
-        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+        <button className="bg-teal-600 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ml-16 mt-4">
           Registrar
         </button>
       </form>
-      <p className="my-4 text-sm flex justify-between px-3">
+      <p className="my-4 text-sm flex justify-between px-3 text-white">
       ¿Ya tiene una cuenta?
-        <Link to="/login" className="text-blue-700 hover:text-blue-900">
+        <Link to="/login" className="text-white hover:text-purple-600">
         Inicio de sesión
         </Link>
       </p>
+    </div>
+    <Link
+          to="/"
+          className="mt-16 mr-6 pl-3 flex items-center justify-end text-xl font-medium"
+        >
+          <img src={img.logo} alt="Logo" className="w-16" /> SeekService
+        </Link>
     </div>
   );
 }

@@ -9,26 +9,33 @@ const cards = [
   {
     id: 1,
     image: electrodomestico,
+    url: '/electro'
   },
   {
     id: 2,
     image: hogar,
+    url: '/hogar'
+
   },
   {
     id: 3,
     image: decoraciones,
+    url: '/decoracion'
   },
   {
     id: 4,
     image: sastre,
+    url: '/sastre'
   },
   {
     id: 4,
     image: taller,
+    url: '/taller'
   },
   {
     id: 5,
     image: otros,
+    url: '/otros'
   },
 ];
 

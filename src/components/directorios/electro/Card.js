@@ -1,4 +1,4 @@
-import "../css/fondo-home.css";
+import "../../css/fondo-home.css";
 
 export default function Card({ imageSource, url }) {
   return (
@@ -12,7 +12,6 @@ export default function Card({ imageSource, url }) {
         />
       </a>
       </div>
-      
     </div>
   );
 }

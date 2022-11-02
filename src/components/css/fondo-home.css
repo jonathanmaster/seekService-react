@@ -75,7 +75,9 @@
 }
 
 .card:hover{
-  box-shadow: #0c294169 0px 7px 20px 0px;
+  box-shadow: #0c294169 7px 7px 20px 7px;
 }
+
+
 
 
